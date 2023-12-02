@@ -1,0 +1,100 @@
+<!--Autor: Jovana Jaćimović 2019/0593-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="../java/index_skripta.js"> </script>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="odobriNovogKorisnika.html">Novi zahtevi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="sviKorisnici.html" lang="sr">Lista korisnika</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item" >
+              <a class="nav-link" href="index.html" style="display: flex; justify-content: left;">Odjavi se</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class=" align-items-center">
+        <div class="row g-0" style="margin-top: 3%;">
+             <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">RB</th>
+                        <th scope="col">Ime</th>
+                        <th scope="col">Prezime</th>
+                        <th scope="col">Profil</th>
+                        <th scope="col">Blokiraj</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="korisnik">
+                        <th scope="row">1</th>
+                        <td>Sofija</td>
+                        <td>Janšević</td>
+                        <td>
+                            <a href="profil.html">Vidi profil</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-danger">Blokiraj</button>
+                        </td>
+                      </tr>
+                      <tr class="korisnik">
+                        <th scope="row">2</th>
+                        <td>Anđela</td>
+                        <td>Jovanović</td>
+                        <td>
+                            <a href="profilSetac.html">Vidi profil</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn bg-danger">Blokiraj</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table> 
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

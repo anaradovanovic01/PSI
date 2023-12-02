@@ -1,0 +1,142 @@
+<!--Autor: Ana Radovanovic 2019/0282-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../java/index_skripta.js"> </script>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="dodajSetnju.html" lang="sr">Dodaj šetnju</a>
+            </li>
+            <li class="nav-item" id = "nalog">
+                <a class="nav-link" href="">Vidi zahteve</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profilSetac.html">Moj profil</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item" >
+              <a class="nav-link" href="index.html" style="display: flex; justify-content: left;">Odjavi se</a>
+          </li>
+      </ul>
+    </nav>
+
+    
+    <div class="row text-center" style="padding-top: 50px; justify-content: space-around;">
+        <div >
+            <table class="table table-dark table-striped " id="tabela" style="width: 350px;">
+                <tr>
+                    <th>
+                        Datum:
+                    </th>
+                    <td>
+                        <input type="date" id="datum" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Od:
+                    </th>
+                    <td>
+                        <input type="text" name="" id="od" placeholder="hh:mm"
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Do:
+                    </th>
+                    <td>
+                        <input type="text" name="" id="do" placeholder="hh:mm">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Cena:
+                    </th>
+                    <td>
+                        <input type="text" name="" id="cena" placeholder="Cena">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Deo grada:
+                    </th>
+                    <td>
+                        <select class="form-control">
+                            <option selected>Izaberi...</option>
+                            <option>Čukarica</option>
+                            <option>Novi Beograd</option>
+                            <option>Palilula</option>
+                            <option>Rakovica</option>
+                            <option>Savski venac </option>
+                            <option>Stari grad </option>
+                            <option>Voždovac</option>
+                            <option>Vračar </option>
+                            <option>Zemun </option>
+                            <option>Zvezdara </option>
+                            <option>Barajevo </option>
+                            <option>Grocka </option>
+                            <option>Lazarevac </option>
+                            <option>Mladenovac </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Maksimalno ljubimaca:
+                    </th>
+                    <td>
+                        <input type="text" name="" id="max" placeholder="Maksimalan broj">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="btn" style="background-color: rgb(251, 197, 153);" id="reg">
+                            Zakazi
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>         
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

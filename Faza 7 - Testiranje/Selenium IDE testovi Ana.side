@@ -1,0 +1,1786 @@
+{
+  "id": "266f29aa-0297-4a7c-b37f-c3077f013107",
+  "version": "2.0",
+  "name": "VeseliPSI",
+  "url": "http://localhost:8000/profil",
+  "tests": [{
+    "id": "f5aed027-d2cc-47b5-824c-9fa860a0eebf",
+    "name": "TP14_Ažuriranje profila promena imena uspešna ",
+    "commands": [{
+      "id": "51e302da-657e-49d6-bd0e-7f8edfd6876b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24e03bd7-17f9-4b94-a936-bc25639a0279",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec464069-c3e9-4e66-a692-851da05b8cd7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ime",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00024ca2-995b-4081-9870-5f8dc4673def",
+      "comment": "",
+      "command": "type",
+      "target": "id=ime",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "Ana"
+    }, {
+      "id": "f08a5631-4f45-4e82-bbd3-fa3e9a6f2377",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3c6e680-5691-4c3f-b415-014f3f9bcc48",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bio-row:nth-child(1)",
+      "targets": [
+        ["css=.bio-row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Ime: Ana"
+    }]
+  }, {
+    "id": "73400079-c45d-45a1-ab98-2e7c9a660737",
+    "name": "TP15_Ažuriranje profila promena prezimena uspešna",
+    "commands": [{
+      "id": "17aba990-6beb-4917-9c67-df902037ce61",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "705c7534-e5c1-43c4-b221-ef9757319766",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f108b501-1227-44c2-bedc-9d0d7466233a",
+      "comment": "",
+      "command": "click",
+      "target": "id=prezime",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e5de74c-548f-46c6-aca8-8aac576a1d21",
+      "comment": "",
+      "command": "type",
+      "target": "id=prezime",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "Perić"
+    }, {
+      "id": "fef35a4e-f1d4-4a41-8597-c03c8d52ff30",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b010231-0fcb-4ee9-9287-f25cf6c3e2ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bio-row:nth-child(2)",
+      "targets": [
+        ["css=.bio-row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Prezime: Perić"
+    }]
+  }, {
+    "id": "6efdd7f4-d023-4935-b0ef-546831edd802",
+    "name": "TP16_Ažuriranje profila promena kontakt telefona uspešna",
+    "commands": [{
+      "id": "d674a83c-8a63-4bad-a5fb-b72ffe9bee44",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a3ecbba-8469-4a24-a7e5-b9ae50c584b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f260dcf-c0bd-41b7-a854-073b24a713d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefon",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f94b74-f188-4034-90d6-58d8e84e9e5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefon",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "0641234567"
+    }, {
+      "id": "782910d3-a7c9-4bbe-a797-321d9e70c4a3",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecde6e49-08fd-47a1-85b6-20ac84efde7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bio-row:nth-child(6)",
+      "targets": [
+        ["css=.bio-row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Mobilni: 0641234567"
+    }]
+  }, {
+    "id": "9af118b8-649e-4318-aecb-9280380df61b",
+    "name": "TP17_Ažuriranje profila promena prebivališta uspešna",
+    "commands": [{
+      "id": "65b1ba93-508f-4f47-aed7-d8e48f2d107b",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "272337ac-d62e-48c2-8fde-ea0bd445af50",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b561ad6-7c0c-4791-b087-f68e463ad845",
+      "comment": "",
+      "command": "click",
+      "target": "name=deoGrada",
+      "targets": [
+        ["name=deoGrada", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//select[@name='deoGrada']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[4]/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0b7c49-1654-4576-ae2c-19eaa427cef8",
+      "comment": "",
+      "command": "select",
+      "target": "name=deoGrada",
+      "targets": [],
+      "value": "label=Autokomanda"
+    }, {
+      "id": "74212744-6892-4ff6-be9d-a54e69c0fdd0",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca1de3ac-4fb0-4741-9c8b-9723b5974351",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bio-row:nth-child(3)",
+      "targets": [
+        ["css=.bio-row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Deo grada: Autokomanda"
+    }]
+  }, {
+    "id": "bed33972-179e-4a06-809a-deca05a41a06",
+    "name": "TP19_Ažuriranje profila promena lozinke neuspešna",
+    "commands": [{
+      "id": "a7f08d6b-6641-4778-8093-4680d6f365e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "052291dc-8634-41ee-9060-ef5ea9822816",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ff6dec-820c-4d19-88b4-bf1e2ddc1e88",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d12cde2-48d4-4409-a6c9-7db8672c66b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "f6a141b0-4610-47a6-b352-12d443932fbc",
+      "comment": "",
+      "command": "click",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4dcd8af-0600-4761-ba44-899c50cb416e",
+      "comment": "",
+      "command": "type",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1"
+    }, {
+      "id": "0b0f502b-6cf9-4d01-951c-3e13dded1354",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "995d91cd-deab-470b-bfce-659388e72027",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1"
+    }, {
+      "id": "e1eb0dce-beec-4a80-9039-904eac198bb1",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f455356a-86b6-4a8a-88a6-2403c74bad57",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c6adc05a-5207-4b6e-a13f-4024c24d4655",
+    "name": "TP18_Ažuriranje profila promena lozinke uspešna",
+    "commands": [{
+      "id": "9bc6e6a0-8142-4afb-a3fd-ca3c3c720785",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c874d5a-382e-4f8c-87c7-d21458b14537",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2e508e2-90eb-4e64-9583-56a2a9dcffed",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a44554-7c62-4895-b745-a27a8a54bcc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": "sifra123"
+    }, {
+      "id": "77c94eab-fa89-4e05-a3ed-ebafe6ad550e",
+      "comment": "",
+      "command": "click",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26de225c-0832-49ad-b2f9-2912b185fb0b",
+      "comment": "",
+      "command": "type",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1"
+    }, {
+      "id": "0b391da2-3485-4e1e-9423-b1a27f39d8e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f7af435-adfe-40c0-aab9-471db085a525",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1"
+    }, {
+      "id": "0a88ee06-844f-440d-a5e4-9985d6842c65",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eabe095d-8304-4856-97f2-4aee819d79ab",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27c82d7e-6c86-4499-a548-86ec628d7b3d",
+    "name": "TP20_Ažuriranje profila promena lozinke neuspešna 2",
+    "commands": [{
+      "id": "4d2a2e0b-5535-4683-81db-f13b5b23619e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3df97a6-5306-4482-85b1-6d4f2fff3c8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb41b1ba-516e-41e8-b90d-df2116b99100",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93e88812-4f53-462b-997a-9facda203f37",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=stara", "name"],
+        ["css=tr:nth-child(6) #pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1"
+    }, {
+      "id": "f24756f6-d446-4442-96de-0df186cab4e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfc7b310-b056-48e1-afad-50854da8c021",
+      "comment": "",
+      "command": "type",
+      "target": "name=nova",
+      "targets": [
+        ["name=nova", "name"],
+        ["css=tr:nth-child(7) #pass", "css:finder"],
+        ["xpath=(//input[@id='pass'])[2]", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[7]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/input", "xpath:position"]
+      ],
+      "value": "sifra."
+    }, {
+      "id": "a3d43831-24ec-4eb9-9de0-67e6bdbb8898",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1c3e743-c704-483e-b3c3-1d5e3780db5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpass",
+      "targets": [
+        ["id=cpass", "id"],
+        ["name=potvrda", "name"],
+        ["css=#cpass", "css:finder"],
+        ["xpath=//input[@id='cpass']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[8]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td/input", "xpath:position"]
+      ],
+      "value": "sifra1."
+    }, {
+      "id": "0b95ccb5-8d89-4cff-84e5-2ec72ce76d8d",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e67be68b-9d3d-4283-b3af-26aa7e893958",
+      "comment": "",
+      "command": "assert",
+      "target": "css=form",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b6655504-55a9-43c8-80b1-973ae1bea8c2",
+    "name": "TP21_Ažuriranje profila promena opisa uspešna",
+    "commands": [{
+      "id": "35a72b80-10ef-4695-b742-7ce6b8a5d649",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45759eea-9a59-436e-ba52-b6a8222078a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .fa",
+      "targets": [
+        ["css=li:nth-child(1) .fa", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Ažuriraj profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "812d14d9-eca3-4a65-b8fa-76b9ec5292de",
+      "comment": "",
+      "command": "click",
+      "target": "id=bio",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c247b66a-6df8-46de-bfb5-cf50dbb7d432",
+      "comment": "",
+      "command": "type",
+      "target": "id=bio",
+      "targets": [
+        ["id=ime", "id"],
+        ["name=ime", "name"],
+        ["css=#ime", "css:finder"],
+        ["xpath=//input[@id='ime']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "Cao"
+    }, {
+      "id": "40d0cf60-64e6-4372-8fab-c19b9bc269d6",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//table[@id='tabela']/tbody/tr[11]/td/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Promeni')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3f28779-4a2a-4eff-87c5-46507dffc79b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bio-row:nth-child(7)",
+      "targets": [
+        ["css=.bio-row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Opis: Cao"
+    }]
+  }, {
+    "id": "749c1ba6-5531-495d-bf8d-6376dc5fcc14",
+    "name": "TP22_Zakazivanje šetnje",
+    "commands": [{
+      "id": "fe32023b-0e22-45ce-9483-0608d702f40d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cec5da82-d2db-4d63-8aeb-6943a83d8f16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2062a7b3-9672-4a42-acde-b015c355fbdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ef30fa-c223-4a47-ae2b-949b2484fab5",
+      "comment": "",
+      "command": "type",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-06-12"
+    }, {
+      "id": "85178a95-08eb-46c3-aadb-63bc54e82d37",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a1045a3-4b8c-44c9-a5b9-a3cc54abf47f",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .btn",
+      "targets": [
+        ["css=a:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[2]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zakaži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72145884-458e-45d5-9693-66553864f1bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Odaberi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87e391d-8b95-4ddd-bac6-0f9dc699734f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(1)",
+      "targets": [
+        ["css=h1:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Biografija')]", "xpath:innerText"]
+      ],
+      "value": "Biografija"
+    }]
+  }, {
+    "id": "a2b14e18-4c12-4a7d-8883-d56dfd20e908",
+    "name": "TP23_Zakazivanje parenja",
+    "commands": [{
+      "id": "0f619271-10f0-452f-b3cc-f5271a980810",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0284fd25-b3ad-4f13-aa5a-7b43c28bcaf7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži partnera",
+      "targets": [
+        ["linkText=Pretaži partnera", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži partnera')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaPartnera']", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži partnera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a36eff87-084c-4b81-8598-ddd0832e6beb",
+      "comment": "",
+      "command": "click",
+      "target": "name=pol",
+      "targets": [
+        ["name=pol", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='pol']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab415f63-0dc9-4e8d-befd-6203e076efc5",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaPartnera",
+      "targets": [
+        ["name=pretragaPartnera", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaPartnera']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f682be37-7bf5-4150-bd5b-1159c52254f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) a:nth-child(2) > .btn",
+      "targets": [
+        ["css=.card:nth-child(1) a:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zakaži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "334449ae-b95d-4625-8076-94cba5d1c0a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Odaberi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7b43f7-7a2d-4a4b-ab16-b96c913ab6c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1:nth-child(1)",
+      "targets": [
+        ["css=h1:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Biografija')]", "xpath:innerText"]
+      ],
+      "value": "Biografija"
+    }]
+  }, {
+    "id": "8f2f3136-5127-4129-9989-2a532245f525",
+    "name": "TP24_Prihvatanje parenja",
+    "commands": [{
+      "id": "be8c5e83-8889-4b97-89ea-da1b1960ab06",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cd464e7-cead-4a61-a22c-c3f51ad573a3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Moji zahtevi za parenje",
+      "targets": [
+        ["linkText=Moji zahtevi za parenje", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Moji zahtevi za parenje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/zahteviZaParenje']", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Moji zahtevi za parenje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7dc1cd4-98c9-48e3-ab13-a63b2534cc13",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .btn",
+      "targets": [
+        ["css=a:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prihvati')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06fee7d1-46b1-4cb6-ae03-8a5c28c67720",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.card-title",
+      "targets": [
+        ["css=.card-title", "css:finder"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Pablo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b02ace69-273c-457a-9bf8-58071b98b5c8",
+    "name": "TP25_Uklanjanje ljubimca",
+    "commands": [{
+      "id": "bb3bdc46-36a0-48f3-bf46-61ebf501f040",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89dcf9ea-631b-44b0-8954-8c1492faea1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6:nth-child(2) .btn",
+      "targets": [
+        ["css=.col-md-6:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div[2]/p[3]/span/a/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72c05751-c06a-4d12-bab8-dce33a780c79",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.col-md-6:nth-child(2) img",
+      "targets": [
+        ["css=.col-md-6:nth-child(2) img", "css:finder"],
+        ["xpath=//div[2]/div/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b499861f-8b62-4b5d-b2c2-8bf1f4f18db9",
+    "name": "TP32_Pretraživanje šetnje sa delom grada",
+    "commands": [{
+      "id": "a584a609-9029-4965-a8f6-bbb2f0cbc40f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4693f10-d3b7-4391-bd7d-1edfcf69ec14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d933da4f-a8d7-463d-a582-2d4064721acf",
+      "comment": "",
+      "command": "click",
+      "target": "name=deoGrada",
+      "targets": [
+        ["name=deoGrada", "name"],
+        ["css=.form-row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//select[@name='deoGrada']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "743706d1-1fd6-4a5e-8039-73a1d93afabf",
+      "comment": "",
+      "command": "select",
+      "target": "name=deoGrada",
+      "targets": [],
+      "value": "label=Senjak"
+    }, {
+      "id": "5678762d-a064-4a2c-a221-ae083be6c78d",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf75d8f3-ae8f-444d-84e0-1a25804bda48",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f13bf5c2-ab69-498f-88b2-37eb070761a5",
+    "name": "TP30_Pretraživanje šetnje sa vremenom početka",
+    "commands": [{
+      "id": "b133f346-9307-49b8-a6c5-71eb523f8526",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07e63337-d9c6-4222-bbe8-cc06c053dfee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3860603-a5e0-4891-8f30-258d103072da",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeOd",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43640d3b-a89f-4324-a6aa-56216773ca88",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeOd",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "18:00"
+    }, {
+      "id": "52ca1d11-a2e1-4135-b538-03685ff3eea5",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2e2d7b-ca45-4ca2-830b-4fb0e43c6ee2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "65fe21ba-0561-42d5-92fd-52d87bbac94b",
+    "name": "TP29_Pretraživanje šetnje sa datumom u prošlosti",
+    "commands": [{
+      "id": "76feb813-e103-4969-86a5-cc70648eccc8",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "506d35d1-e831-41bd-8f94-ac67d0046c75",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6492fc7-e069-44e4-b1bf-88963f57aa60",
+      "comment": "",
+      "command": "click",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbd83200-afb8-4b08-a36a-59be356547cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-06-06"
+    }, {
+      "id": "92d75ec9-6f0b-4a3a-8b73-2415ba966d9b",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7340309f-aa1e-481e-a3f0-f13aee471b4f",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0042a9a-3c3e-4ba4-9840-248d680ba8ae",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Ne postoje šetnje koje zadovoljavaju unete parametre"
+    }]
+  }, {
+    "id": "bc2798a3-e3a7-41e7-9ef1-149f175cb02a",
+    "name": "TP28_Pretraživanje šetnje sa datumom",
+    "commands": [{
+      "id": "74f09713-72c7-4e7d-999f-96d3d0493903",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f221454-1af8-434f-b28c-6811f3425e54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7bdd893-066d-449a-9956-529cb53d0683",
+      "comment": "",
+      "command": "click",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab69dec9-9dac-4bb3-9b31-12b6a0f76a90",
+      "comment": "",
+      "command": "type",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-06-12"
+    }, {
+      "id": "b94fdf05-7d78-4aad-9a8d-f35f55d14d0c",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "828e023d-62b9-4199-8001-fe6ea3cd295d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ef1a6b0c-caa1-4717-adaa-127295758436",
+    "name": "TP31_Pretraživanje šetnje sa vremenom kraja",
+    "commands": [{
+      "id": "2b8aaa57-ffac-4077-8720-d67ea1375c0c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ecddb23-0789-494a-9b63-82512e494442",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "671d037c-f749-4a20-b5d6-7f66749704b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeDo",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "008d07c2-2d18-4c9c-822a-35ea146eeee3",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeDo",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "23:00"
+    }, {
+      "id": "5c16f41a-dcc4-4c79-95d7-cfe9d00c342b",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca889214-47ae-4566-8ab1-4eb31fae2d6c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f07ea980-5a42-48ee-b7f9-a359ac9ae39e",
+    "name": "TP26_Pretraživanje šetnje sa svim parametrima",
+    "commands": [{
+      "id": "957bf971-b06a-4c42-a245-da713bd9bc9e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f959e14-ab6b-406b-bdd3-de28bdcd10e2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9db26804-2855-4055-99b2-24f14fd02bd8",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c308d5d-0f91-4c3d-8711-d99cb4adf784",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeOd", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeOd']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "18:00"
+    }, {
+      "id": "1b65cef5-0753-47e3-a440-2e56eca6ceb2",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f964db6-2d4a-4396-9850-54ab3063da11",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "23:00"
+    }, {
+      "id": "159d6b6f-d9bd-4ba8-8b8c-e14bb7df9755",
+      "comment": "",
+      "command": "click",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed1fcd31-df68-4b07-96f1-7a0297c2326f",
+      "comment": "",
+      "command": "type",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-06-12"
+    }, {
+      "id": "ad1618a9-28c3-4047-8a9d-f8efe4241248",
+      "comment": "",
+      "command": "click",
+      "target": "name=deoGrada",
+      "targets": [
+        ["name=deoGrada", "name"],
+        ["css=.form-row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//select[@name='deoGrada']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e0883d9-61a1-47e4-8e11-c61d2bdf6d63",
+      "comment": "",
+      "command": "select",
+      "target": "name=deoGrada",
+      "targets": [],
+      "value": "label=Senjak"
+    }, {
+      "id": "42900ebe-4c03-47b4-be55-5b258b04aeea",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a848602-a656-4769-8be4-997a4a8639b6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "487f423e-35fe-4d60-83a9-1b8739ce0fcc",
+    "name": "TP27_Pretraživanje šetnje nema šetnji",
+    "commands": [{
+      "id": "dee768dd-4ee4-4c63-8d58-f3b722a47225",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fe49c1b-a13a-4720-b0bc-6f48df28ad93",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdce9d5e-9887-460e-ba7c-043be99cb45e",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6534f3da-e089-4d36-8c44-9c6a70d5fc88",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeOd", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeOd']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "18:00"
+    }, {
+      "id": "b74f0aa2-8e51-4185-8469-966d8cb4b9ec",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc616b24-5d67-4d06-8bed-f02c26ad3097",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "23:00"
+    }, {
+      "id": "040fabf8-4969-4836-9e4d-4f867c09b27e",
+      "comment": "",
+      "command": "click",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d6870a-4ff0-4c6a-9813-3aa3a2317332",
+      "comment": "",
+      "command": "type",
+      "target": "id=datum",
+      "targets": [
+        ["id=datum", "id"],
+        ["name=datum", "name"],
+        ["css=#datum", "css:finder"],
+        ["xpath=//input[@id='datum']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "2022-06-12"
+    }, {
+      "id": "7a669622-9d61-48db-bde4-d922a22cb9f6",
+      "comment": "",
+      "command": "click",
+      "target": "name=deoGrada",
+      "targets": [
+        ["name=deoGrada", "name"],
+        ["css=.form-row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//select[@name='deoGrada']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c0db6a-ef28-4b02-b022-535fb639a610",
+      "comment": "",
+      "command": "select",
+      "target": "name=deoGrada",
+      "targets": [],
+      "value": "label=Vračar"
+    }, {
+      "id": "f7179f28-58d7-4603-9074-87b6205b15c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12ee6af9-bef0-4b82-ad52-a7c05e4547ec",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62d8aaa5-d800-414c-b171-26c81e4fe579",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Ne postoje šetnje koje zadovoljavaju unete parametre"
+    }]
+  }, {
+    "id": "b0334b3f-9d74-4dba-88eb-e95569e22abc",
+    "name": "TP33_Pretraživanje šetnje sa vremenom kraja pre vremena početka",
+    "commands": [{
+      "id": "84fdefc1-4442-49cb-9b27-cc4911ae5cb2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8000/profil",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aaac488-d404-48b5-8e12-830b91fc9ac5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pretaži šetnje",
+      "targets": [
+        ["linkText=Pretaži šetnje", "linkText"],
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pretaži šetnje')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000/pretragaSetnji']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pretaži šetnje')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bab87d18-eac7-4363-b4eb-4e586102a146",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69ae808c-66b4-41c0-9465-d3852f4dbe9e",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeOd",
+      "targets": [
+        ["name=vremeOd", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeOd']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "18:00"
+    }, {
+      "id": "e7b2e43b-5b7d-4c25-980e-9cdcb4853b84",
+      "comment": "",
+      "command": "click",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5861768c-d3a2-4af4-b3e6-ae3f28807c50",
+      "comment": "",
+      "command": "type",
+      "target": "name=vremeDo",
+      "targets": [
+        ["name=vremeDo", "name"],
+        ["css=.form-row:nth-child(1) > .form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='vremeDo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "10:00"
+    }, {
+      "id": "ffd937aa-28b6-467b-9871-a21d98d17717",
+      "comment": "",
+      "command": "click",
+      "target": "name=pretragaSetnji",
+      "targets": [
+        ["name=pretragaSetnji", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='pretragaSetnji']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pretraži')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e853c0b2-b284-4e89-a95d-a95e852a170a",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.card-text",
+      "targets": [
+        ["css=.card-text", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5baa7ba7-f01b-4ff7-91d4-337dd51767b9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Uneti podaci nisu validni"
+    }]
+  }],
+  "suites": [{
+    "id": "0b62b53d-544a-4486-a1e2-1db0db2ba321",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8000/", "http://localhost:8000/profil"],
+  "plugins": []
+}

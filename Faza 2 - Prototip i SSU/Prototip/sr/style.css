@@ -1,0 +1,278 @@
+.logo{
+    height: 5px;
+}
+body {
+    background-image: url("../slike/background.jpg");
+    background-size: 750px;
+}
+
+.nav-link {
+    color: rgb(127, 42, 184);
+    color: white;
+}
+.active{
+    color:white;
+    font-weight: 800;
+}
+
+a:hover{
+    font-weight: bold;
+    color: white;
+}
+.unesi{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.center{
+    text-align: center;
+}
+th{
+    text-align: left;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sortiraj{
+    padding-left: 15px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+.nalog{
+    background-color: whitesmoke;
+    margin-top: 25px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    font-size: x-small;
+    text-align: center;
+    background: grey;
+    font-style: italic;
+}
+
+  .header{
+    background : white;
+    display: flex;
+    padding: 0.5%;
+  }
+
+  .header img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+.center-div {
+    background-color: rgb(251, 197, 153);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    padding-bottom: 20px;
+    min-height: 80vh;
+}
+
+.img-in-card{
+    width: 200px;
+    height: 200px;
+    margin: 7%;
+}
+
+#slike-u-moje-setnje {
+    width: 200px;
+    height: 200px;
+}
+
+#zatamljeno {
+    background-color: lightgray;
+}
+
+.profile-nav, .profile-info{
+    margin-top:30px;   
+}
+
+.profile-nav .user-heading {
+    background: rgb(251, 197, 153);
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.profile-nav .user-heading.round a  {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 10px solid rgba(255,255,255,0.3);
+    display: inline-block;
+}
+
+.profile-nav .user-heading a img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.profile-nav .user-heading h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(52,58,64);
+    margin-bottom: 5px;
+}
+
+.profile-nav .user-heading p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(52,58,64);
+}
+
+.profile-nav ul {
+    margin-top: 1px;
+}
+
+.profile-nav ul > li {
+    border-bottom: 1px solid #ebeae6;
+    margin-top: 0;
+    line-height: 30px;
+    display: block;
+    font-weight: 500;
+}
+
+.profile-nav ul > li:last-child {
+    border-bottom: none;
+}
+
+.profile-nav ul > li > a {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    color: rgb(52,58,64);
+    border-left: 5px solid #fff;
+}
+
+.profile-nav ul > li > a:hover, .profile-nav ul > li > a:focus, .profile-nav ul li.active  a {
+    background: #f8f7f5 !important;
+    border-left: 5px solid rgb(52,58,64);
+    color: rgb(52,58,64) !important;
+}
+
+.profile-nav ul > li > a > i{
+    font-size: 16px;
+    padding-right: 10px;
+    color: rgb(52,58,64);
+}
+
+.bio-graph-info {
+    color: rgb(52,58,64);
+}
+
+.bio-graph-info h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.bio-whole-row {
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px; 
+}
+
+.bio-whole-row p span {
+    width: 100px;
+    display: inline-block;
+}
+
+.bio-row {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding:0 15px;
+}
+
+.bio-row p span {
+    width: 100px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.bio-chart, .bio-desk {
+    float: left;
+    color: rgb(52,58,64);
+}
+
+.bio-chart {
+    width: 40%;
+}
+
+.bio-desk {
+    width: 60%;
+}
+
+.bio-desk h4 {
+    font-size: 130%;
+    font-weight:400;
+}
+
+.bio-dsk p span {
+    width: 100px;
+    font-weight: 600;
+}
+
+.bio-desk h4.terques {
+    color: #25b7c2;
+}
+
+.bio-desk h4.red {
+    color: #eb647b;
+}
+
+.bio-desk h4.green {
+    color: #97be4b;
+}
+
+.bio-desk h4.purple {
+    color: #caa3da;
+    text-decoration: underline;
+}
+
+.pas{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+}
+
+form {
+    margin: 8px;
+}
+
+.zvezda{
+    color:rgb(251, 197, 153)
+}
+
+.korisnik td a{
+    color:white;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#tabela input:not([type="radio"]), textarea {
+    width: 250px;
+}

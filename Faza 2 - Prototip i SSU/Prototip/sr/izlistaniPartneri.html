@@ -1,0 +1,191 @@
+<!--Autor: Ana Radovanovic 2019/0282 i Nastasija Avramovic 2019/0446-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="../java/index_skripta.js"> </script>
+    <script src="skripta.js"></script>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pretragaSetnji.html" lang="sr">Šetnja</a>
+            </li>
+            <li class="nav-item" id = "nalog">
+                <a class="nav-link active" href="pretragaPartnera.html">Partner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profil.html">Moj profil</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item" >
+              <a class="nav-link" href="#" style="display: flex; justify-content: left;">Odjavi se</a>
+          </li>
+      </ul>
+    </nav>
+    <div class="align-items-center center-div">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Starost</label>
+                <input type="text" class="form-control" placeholder="Od" value="1">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Starost</label>
+                <input type="text" class="form-control" placeholder="Do" value="6">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Pol</label>
+                <br>
+                <input type="radio" name="m-z" checked value="vlasnik">Muski
+                <input type="radio" name="m-z" value="setac"> Ženski
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputState">Rasa</label>
+                <select class="form-control">
+                  <option selected>Izaberi...</option>
+                  <option>Terijer</option>
+                  <option>Labrador</option>
+                  <option>Zlatni retriver</option>
+                  <option>Doberman</option>
+                  <option>Maltezer </option>
+                  <option>Bišon</option>
+                  <option>Čivava</option>
+                  <option>Patuljasti pinč </option>
+                  <option>Pudla </option>
+                  <option>Akita </option>
+                  <option>Šarplaninac </option>
+                  <option>Haski </option>
+                  <option>Pitbul </option>
+                  <option>Hrt </option>
+                </select>
+              </div>
+            </div>
+          <div style="text-align: center;">
+            <a href="izlistaniPartneri.html">
+              <button type="button" class="btn btn-dark">Pretraži</button>
+            </a>
+          </div>
+          </form>
+          <div class=" align-items-center" style="margin: 2%;">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../slike/pas2.jpg" class="img-fluid rounded-start img-in-card pas" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Hak</h5>
+                      <p class="card-text">
+                          Rasa: Cane Corso <br>
+                          Starost: 1 godina <br>
+                          Vlasnik: Milos <br>
+                          Opis: Veselo i zivahno mladunce<br>
+                      </p>
+                    </div>
+                    <a href="#">
+                      <button type="button" class="btn btn-dark" style="margin-left: 2.5%;" onclick="zakaziParenje()">
+                        Zakaži</button>
+                    </a>
+                    <a href="profil.html"><button type="button" class="btn btn-dark" style="margin-left: 2.5%;">
+                      Prikaži profil
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../slike/pas3.jpg" class="img-fluid rounded-start img-in-card pas" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Dragoljub</h5>
+                      <p class="card-text">
+                        Rasa: Bison <br>
+                        Starost: 6 godina <br>
+                        Vlasnik: Milica <br>
+                        Opis: Prelep mali pufnasti pas, miran i umiljat<br>
+                    </p>
+                    </div>
+                    <a href="#">
+                      <button type="button" class="btn btn-dark" style="margin-left: 2.5%;" onclick="zakaziParenje()">
+                        Zakaži</button>
+                    </a>
+                    <a href="profil.html"><button type="button" class="btn btn-dark" style="margin-left: 2.5%;">
+                      Prikaži profil
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../slike/pas1.jpg" class="img-fluid rounded-start img-in-card pas" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Pablo</h5>
+                      <p class="card-text">
+                        Rasa: Francuski buldog <br>
+                        Starost: 4 godine <br>
+                        Vlasnik: Andrija <br>
+                        Opis: Druzeljubiv i umiljat<br>
+                      </p>
+                    </div>
+                    <a href="#">
+                      <button type="button" class="btn btn-dark" style="margin-left: 2.5%;" onclick="zakaziParenje()">
+                        Zakaži</button>
+                    </a>
+                    <a href="profil.html"><button type="button" class="btn btn-dark" style="margin-left: 2.5%;">
+                      Prikaži profil
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    
+</div>
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

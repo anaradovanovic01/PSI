@@ -1,0 +1,151 @@
+<!--Autor: Jovana Jaćimović 2019/0593-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../java/index_skripta.js"></script>
+    <script src="skripta.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pretragaSetnji.html" lang="sr">Šetnja</a>
+            </li>
+            <li class="nav-item" id="nalog">
+                <a class="nav-link" href="pretragaPartnera.html">Partner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="profil.html">Moj profil</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id="jezik">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id="jezik">
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">Odjavi se</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="align-items-center center-div"  style="margin: 0 20% 0 20%;">
+        <div class=" align-items-center" style="margin: 2%;">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../slike/setac5.jpg" class="img-fluid rounded-start img-in-card" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Marijana</h5>
+                            <p class="card-text">
+                                Datum: 5.5.2022. <br>
+                                Od: 16:15 <br>
+                                Do: 17:15 <br>
+                                Lokacija: Vračar <br>
+                            </p>
+                        </div>
+                        <a href="#">
+                            <button type="button" class="btn btn-dark" style="margin-left: 2.5%;" onclick="otkaziSetnjuVlasnik()">
+                                Odjavi</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="zatamljeno">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../slike/setac2.jpg" class="img-fluid rounded-start img-in-card" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Milja</h5>
+                            <p class="card-text">
+                                Datum: 25.3.2022. <br>
+                                Od: 16:15 <br>
+                                Do: 17:15 <br>
+                                Lokacija: Vračar <br>
+                            </p> 
+                            <a href="oceniKorisnika.html"><button type="button" class="btn" style="background-color: rgb(251, 197, 153);">Oceni</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="zatamljeno">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../slike/setac1.jpg" class="img-fluid rounded-start img-in-card" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Stefan</h5>
+                            <p class="card-text">
+                                Datum: 22.3.2022. <br>
+                                Od: 16:00 <br>
+                                Do: 18:00 <br>
+                                Lokacija: Vračar <br>
+                            </p>
+                            <a href="oceniKorisnika.html"><button type="button" class="btn" style="background-color: rgb(251, 197, 153);">Oceni</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3" id="zatamljeno">
+                <div class="row g-0">
+                    <div class="col-md-4" >
+                        <img src="../slike/setac3.jpg" class="img-fluid rounded-start img-in-card" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Marija</h5>
+                            <p class="card-text">
+                                Datum: 21.3.2022. <br>
+                                Od: 14:00 <br>
+                                Do: 18:00 <br>
+                                Lokacija: Vračar<br>
+                            </p>
+                            <a href="oceniKorisnika.html"><button type="button" class="btn" style="background-color: rgb(251, 197, 153);">Oceni</button></a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

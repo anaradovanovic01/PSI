@@ -1,0 +1,100 @@
+<!--Autor: Ana Radovanovic 2019/0282-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="../java/index_skripta.js"> </script>
+    <script src="skripta.js"></script>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pretragaSetnji.html" lang="sr">Šetnja</a>
+            </li>
+            <li class="nav-item" id = "nalog">
+                <a class="nav-link" href="pretragaPartnera.html">Partner</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item" >
+                <a class="nav-link" href="login.html" style="display: flex; justify-content: left;">Uloguj se</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="registracija.html" style="display: flex; justify-content: left;">Registracija</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container"> 
+        <div class="row text-center" style="padding-top: 50px; justify-content: space-around;">
+            <div >
+                <table class="table table-dark table-striped " id="tabela" style="width: 350px;">
+                    <tr>
+                        <th>
+                            Email:
+                        </th>
+                        <td>
+                            <input type="email" name="" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Password:
+                        </th>
+                        <td>
+                            <input type="password" name="" id="pass">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="btn" style="background-color: rgb(251, 197, 153);" id="login" onclick="ulogujSe()">
+                                Login
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Nemate nalog? <a href="registracija.html" style="color:rgb(251, 197, 153)"> Registrujte se</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>         
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>

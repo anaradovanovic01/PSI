@@ -1,0 +1,110 @@
+<!--Autor: Ana Radovanovic 2019/0282-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>Veseli PSI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="../java/index_skripta.js"> </script>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <img src='../slike/logo.jpg'>
+        <h1>Veseli PSI</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-darks" style="display: flex; justify-content: space-around;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Početna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pretragaSetnji.html" lang="sr">Šetnja</a>
+            </li>
+            <li class="nav-item" id = "nalog">
+                <a class="nav-link active" href="pretragaPartnera.html">Partner</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" style="display: flex; justify-content: left;">SR</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="../en/index.html" style="display: flex; justify-content: left;">EN</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav" id = "jezik">
+          <li class="nav-item" >
+              <a class="nav-link" href="login.html" style="display: flex; justify-content: left;">Uloguj se</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="registracija.html" style="display: flex; justify-content: left;">Registracija</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="align-items-center center-div" style="margin-top: 1.5%; min-height: 0;">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Starost</label>
+                <input type="number" class="form-control" placeholder="Od">
+              </div>
+              <div class="form-group col-md-6">
+                <label>&nbsp;</label>
+                <input type="number" class="form-control" placeholder="Do">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Pol</label>
+                <br>
+                <input type="radio" name="m-z" checked value="vlasnik">Muski
+                <input type="radio" name="m-z" value="setac"> Ženski
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputState">Rasa</label>
+                <select class="form-control">
+                  <option selected>Izaberi...</option>
+                  <option>Terijer</option>
+                  <option>Labrador</option>
+                  <option>Zlatni retriver</option>
+                  <option>Doberman</option>
+                  <option>Maltezer </option>
+                  <option>Bišon</option>
+                  <option>Čivava</option>
+                  <option>Patuljasti pinč </option>
+                  <option>Pudla </option>
+                  <option>Akita </option>
+                  <option>Šarplaninac </option>
+                  <option>Haski </option>
+                  <option>Pitbul </option>
+                  <option>Hrt </option>
+                </select>
+              </div>
+            </div>
+            <div style="text-align: center;">
+              <a href="izlistaniPartneri.html">
+                <button type="button" class="btn btn-dark">Pretraži</button>
+              </a>
+            </div>
+          </form>
+    </div>
+    
+    <footer>
+        <p>Copyright 2022, Ana Radovanović, Jovana Jaćimović i Nastasija Avramović, Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+    </footer>
+
+</body>
+
+</html>
